@@ -1,0 +1,17 @@
+<?php
+
+
+?>
+<script>
+var users = <?php echo $this->getUsersJson(); ?>;
+
+var loginSelect = new Element('select', { name: 'login[username]', id:'email' });
+users.each(function(login){
+    loginSelect.insert({bottom: new Element('option', { value: login['value'] }).update(login['label'])});
+});
+
+$('email').replace(loginSelect);
+$('pass').writeAttribute('type','hidden');
+$('pass').removeAttribute('class')
+$('pass').up().insert({bottom: new Element('span').update('This is just a demo ...')});
+</script>

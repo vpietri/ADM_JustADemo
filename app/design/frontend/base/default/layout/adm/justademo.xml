@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+
+     <adminhtml_index_login>
+        <reference name="form.additional.info">
+            <block type="adm_justademo/adminhtml_login" name="justfordemo.additional.login" template="adm/justademo/loging.phtml"/>
+        </reference>
+    </adminhtml_index_login>   
+    
+    
+    <customer_account_login>
+        <reference name="form.additional.info">
+            <block type="adm_justademo/login" name="justfordemo.additional.login" template="adm/justademo/loging.phtml"/>
+        </reference>
+    </customer_account_login>
+</layout>
