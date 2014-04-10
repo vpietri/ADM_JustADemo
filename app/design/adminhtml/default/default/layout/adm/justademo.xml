@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout version="0.1.0">
 
+    <default>
+        <reference name="root">
+          <action method="unsetChild"><name>header</name></action>
+          <block type="adm_justademo/adminhtml_page_header" name="header" as="header">
+            <block type="adminhtml/page_header" name="justfordemo.header" as="justfordemo.header"></block>
+          </block>
+        </reference>
+    </default>
+
+
      <adminhtml_index_login>
         <reference name="form.additional.info">
             <block type="adm_justademo/adminhtml_login" name="justfordemo.additional.login" template="adm/justademo/loging.phtml"/>
