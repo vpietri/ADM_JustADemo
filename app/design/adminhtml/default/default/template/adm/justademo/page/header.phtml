@@ -27,6 +27,6 @@
 /** @var $this Mage_Adminhtml_Block_Page_Header */
 ?>
 <div class="header-top" style="background-color: orange;text-align:center;">
-<span>Using module JustADemo</span>
+<span><?php echo $this->getTitle(); ?></span>
 </div>
 <?php echo $this->getChildHtml('justfordemo.header') ?>
