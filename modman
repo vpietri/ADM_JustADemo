@@ -1,0 +1,6 @@
+app/code/community/ADM/JustADemo
+app/design/frontend/base/default/template/adm/justademo
+app/design/frontend/base/default/layout/adm/justademo.xml
+app/design/adminhtml/default/default/template/adm/justademo
+app/design/adminhtml/default/default/layout/adm/justademo.xml
+app/etc/modules/ADM_JustADemo.xml
